@@ -1,0 +1,50 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# -------------------------
+# Ambiente virtual
+# -------------------------
+.venv/
+venv/
+env/
+license_monitor/
+
+# -------------------------
+# VS Code
+# -------------------------
+.vscode/
+
+# -------------------------
+# Sistema operacional
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Logs e temporários
+# -------------------------
+*.log
+*.tmp
+
+# -------------------------
+# Dados sensíveis / ambiente
+# -------------------------
+.env
+
+# -------------------------
+# Anotações
+# -------------------------
+_notes/
+
+# -------------------------
+# CSV de produção (opcional)
+# -------------------------
+# Ignore o CSV real se ele contiver dados de clientes
+# Mantenha apenas um exemplo versionado
+data/licenses.csv
+
