@@ -42,7 +42,7 @@ Thumbs.db
 _notes/
 
 # -------------------------
-# CSV de produção (opcional)
+# CSV de produção
 # -------------------------
 # Ignore o CSV real se ele contiver dados de clientes
 # Mantenha apenas um exemplo versionado
