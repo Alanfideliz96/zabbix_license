@@ -1,9 +1,10 @@
 import csv
 import json
 from pathlib import Path
+import os
 
-
-CSV_FILE = Path("data/licenses.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_FILE = os.path.join(BASE_DIR, "..", "data", "licenses.csv")
 
 def load_licenses():
     """
@@ -25,6 +26,15 @@ def load_licenses():
             })
             
     return licenses
+
+def discovery_by_client():
+    licenses = load_licenses
+
+    clientes = sorted({lic["cliente"] for lic in licenses})
+
+    data = [{"{#CLIENTE}":c} for c in clientes]
+
+    print(json.dumps({"data":data}, ensure_ascii=False))
 
 if __name__ == "__main__":
     for lic in load_licenses()[:5]:
