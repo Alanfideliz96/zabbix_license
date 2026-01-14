@@ -1,6 +1,6 @@
 # Zabbix License Expiration Monitor
 
-Projeto para monitorar datas de expiração de licenças no **Zabbix**, utilizando  
+Projeto para monitorar datas de expiração de licenças no **Zabbix**, utilizando
 **Zabbix Agent + scripts em Python + CSV** como fonte de dados.
 
 O objetivo é gerar alertas automáticos quando licenças estiverem próximas do vencimento
@@ -58,7 +58,9 @@ Key: license.days[{#CLIENTE}]
 Criar Trigger Prototypes, por exemplo:
 
 ⚠️ <= 30 dias
+
 🔥 <= 15 dias
+
 ❌ < 0 dias (licença expirada)
 
 O script license_days.py retorna:
@@ -70,4 +72,5 @@ Número positivo → dias restantes para a licença mais próxima vencer
 Número negativo → licença já expirada
 
 404 → cliente não encontrado 
+
 
