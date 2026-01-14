@@ -63,6 +63,9 @@ Criar Trigger Prototypes, por exemplo:
 
 ❌ < 0 dias (licença expirada)
 
+🔔 Retorno
+
+
 O script license_days.py retorna:
 
 Número positivo → dias restantes para a licença mais próxima vencer
@@ -72,5 +75,6 @@ Número positivo → dias restantes para a licença mais próxima vencer
 Número negativo → licença já expirada
 
 404 → cliente não encontrado 
+
 
 
