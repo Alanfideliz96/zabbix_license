@@ -41,11 +41,15 @@ Criar um arquivo de UserParameters, por exemplo:
 Conteúdo:
 
 Discovery de clientes
-- UserParameter=license.discovery,python "C:\zabbix\scripts\license_discovery.py"
+```
+UserParameter=license.discovery,python "C:\zabbix\scripts\license_discovery.py"
+```
 
 Dias para expiração da licença por cliente
-- UserParameter=license.days[*],python "C:\zabbix\scripts\license_days.py" "$1"
 
+```
+UserParameter=license.days[*],python "C:\zabbix\scripts\license_days.py" "$1"
+```
 
 ## 📊Integração com o Zabbix
 
@@ -64,7 +68,7 @@ Criar Trigger Prototypes, por exemplo:
 
 ❌ < 0 dias (licença expirada)
 
-🔔 Retorno
+## 🔔 Retorno
 
 
 O script license_days.py retorna:
@@ -76,6 +80,7 @@ O script license_days.py retorna:
 - Número negativo → licença já expirada
 
 - "Cliente não encontrado" -> Cliente não encontrado
+
 
 
 
