@@ -70,11 +70,12 @@ O script license_days.py retorna:
 
 Número positivo → dias restantes para a licença mais próxima vencer
 
-0 → vence hoje
+- 0 → vence hoje
 
-Número negativo → licença já expirada
+- Número negativo → licença já expirada
 
-404 → cliente não encontrado 
+- "Cliente não encontrado" 
+
 
 
 
