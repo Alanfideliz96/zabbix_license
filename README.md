@@ -17,6 +17,7 @@ ou já expiradas, organizadas por **cliente**.
 ## 📁 Estrutura do projeto
 
 zabbix-license-monitor/
+
 ├── scripts/
 
 │ ├── license_discovery.py # Discovery de clientes (LLD)
@@ -75,6 +76,7 @@ Número positivo → dias restantes para a licença mais próxima vencer
 - Número negativo → licença já expirada
 
 - "Cliente não encontrado" 
+
 
 
 
