@@ -36,27 +36,27 @@ zabbix-license-monitor/
 
 Criar um arquivo de UserParameters, por exemplo:
 
-C:\zabbix\conf\userparameters_license.conf
+- C:\zabbix\conf\userparameters_license.conf
 
 Conteúdo:
 
-# Discovery de clientes
-UserParameter=license.discovery,python "C:\zabbix\scripts\license_discovery.py"
+Discovery de clientes
+- UserParameter=license.discovery,python "C:\zabbix\scripts\license_discovery.py"
 
-# Dias para expiração da licença por cliente
-UserParameter=license.days[*],python "C:\zabbix\scripts\license_days.py" "$1"
+Dias para expiração da licença por cliente
+- UserParameter=license.days[*],python "C:\zabbix\scripts\license_days.py" "$1"
 
 
 ## 📊Integração com o Zabbix
 
-# No Zabbix Server:
+No Zabbix Server:
 
-Criar um template
-Criar uma Discovery Rule usando a key license.discovery
-Criar Item Prototypes
-Key: license.days[{#CLIENTE}]
+- Criar um template
+- Criar uma Discovery Rule usando a key license.discovery
+- Criar Item Prototypes
+- Key: license.days[{#CLIENTE}]
 
-# Criar Trigger Prototypes, por exemplo:
+Criar Trigger Prototypes, por exemplo:
 
 ⚠️ <= 30 dias
 
@@ -67,7 +67,7 @@ Key: license.days[{#CLIENTE}]
 🔔 Retorno
 
 
-# O script license_days.py retorna:
+O script license_days.py retorna:
 
 - Número positivo → dias restantes para a licença mais próxima vencer
 
@@ -76,6 +76,7 @@ Key: license.days[{#CLIENTE}]
 - Número negativo → licença já expirada
 
 - "Cliente não encontrado" -> Cliente não encontrado
+
 
 
 
