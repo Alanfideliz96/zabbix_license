@@ -18,11 +18,17 @@ ou já expiradas, organizadas por **cliente**.
 
 zabbix-license-monitor/
 ├── scripts/
+
 │ ├── license_discovery.py # Discovery de clientes (LLD)
+
 │ └── license_days.py # Retorna dias para expiração
+
 ├── data/
+
 │ └── licenses.csv # Base de dados das licenças
+
 ├── .gitignore
+
 └── README.md
 
 ⚙️ Configuração do Zabbix Agent
@@ -64,3 +70,4 @@ Número positivo → dias restantes para a licença mais próxima vencer
 Número negativo → licença já expirada
 
 404 → cliente não encontrado 
+
